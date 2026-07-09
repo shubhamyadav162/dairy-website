@@ -4,7 +4,7 @@ import React from "react";
 import { Star, ShoppingCart, Eye } from "lucide-react";
 import { useCart, Product } from "../context/CartContext";
 
-// Detailed products catalog aligned with UDF capabilities
+// 10 Detailed products catalog including subscriptions, bundles and combinations
 export const PRODUCTS: Product[] = [
   {
     id: "udf-a2-ghee",
@@ -14,31 +14,99 @@ export const PRODUCTS: Product[] = [
     reviews: 248,
     image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM.jpeg",
     tag: "Vedic Bilona Churned",
-    description: "Our crown jewel. Made from the milk of grass-fed desi cows, curdled, and then hand-churned using traditional wooden bilona in clay pots. Simmered over low firewood to achieve the golden, granulated texture and rich nutty aroma.",
+    description: "Prepared using traditional clay pot bilona churning of A2 cow milk curds. Simmered on slow woodfire for rich granularity and authentic aroma.",
     benefits: [
       "Traditional A2 Vedic Bilona method",
-      "Lactose and gluten-free",
+      "Lactose & gluten-free",
       "Improves digestion & gut health",
-      "Rich source of Vitamins A, D, E, and K"
+      "Rich source of Vitamins A, D, E, K"
     ],
     sizes: ["1 Litre", "500ml"]
   },
   {
-    id: "udf-a2-milk",
-    name: "Ultra Fresh A2 Cow Milk (Whole)",
-    price: 90,
+    id: "udf-ghee-combo-3l",
+    name: "Ultimate Vedic Ghee Storage Pack (3 Litres)",
+    price: 4299,
+    rating: 4.9,
+    reviews: 96,
+    image: "/images/WhatsApp Image 2026-07-09 at 2.19.20 PM (3).jpeg",
+    tag: "Bulk Combo Saving",
+    description: "Get a value pack of 3 bottles of 1 Litre A2 Desi Cow Bilona Ghee. Save money on bulk shipping and secure your family's health for months.",
+    benefits: [
+      "Pack of 3 Glass Jars (1L each)",
+      "Flat discount of ₹200 included",
+      "Perfect shelf life up to 12 months",
+      "Free premium delivery all over India"
+    ],
+    sizes: ["3 Litres Pack"]
+  },
+  {
+    id: "udf-a2-milk-sub",
+    name: "Ultra Fresh A2 Cow Milk (30 Days Subscription)",
+    price: 2700,
     rating: 4.8,
     reviews: 185,
     image: "/images/WhatsApp Image 2026-07-09 at 2.19.21 PM.jpeg",
-    tag: "100% Organic A2",
-    description: "Fresh, premium A2 cow milk sourced directly from select organic pastures in the morning and delivered chilled. Zero adulteration, zero preservatives, and full of natural nutrients.",
+    tag: "Prepaid Subscription",
+    description: "Enjoy daily morning delivery of fresh A2 Cow Milk directly to your doorstep in Mumbai. Includes a 30 Litre prepaid delivery card.",
     benefits: [
-      "Rich in premium A2 beta-casein protein",
-      "Direct from farm to home within 12 hours",
-      "Highly digestible for all age groups",
-      "Packed with bone-strengthening calcium"
+      "30 Litres fresh A2 milk total",
+      "Delivered daily (1 Litre per morning)",
+      "Pause / resume delivery anytime via phone",
+      "Rich in premium digestible A2 protein"
     ],
-    sizes: ["1 Litre"]
+    sizes: ["30 Days Plan (30L)"]
+  },
+  {
+    id: "udf-premium-milk-sub",
+    name: "Ultra Fresh Premium Cow Milk (30 Days Subscription)",
+    price: 2250,
+    rating: 4.8,
+    reviews: 320,
+    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM (1).jpeg",
+    tag: "Prepaid Subscription",
+    description: "Daily fresh whole cow milk pasteurized hygienically and delivered before 8:00 AM. Includes 30 Litres prepaid delivery card.",
+    benefits: [
+      "30 Litres whole cow milk total",
+      "Daily fresh morning doorstep delivery",
+      "No delivery charges included",
+      "Rich in natural fat and vitamins"
+    ],
+    sizes: ["30 Days Plan (30L)"]
+  },
+  {
+    id: "udf-buffalo-milk-sub",
+    name: "Ultra Thick Buffalo Milk (30 Days Subscription)",
+    price: 3300,
+    rating: 4.7,
+    reviews: 110,
+    image: "/images/WhatsApp Image 2026-07-09 at 2.19.16 PM (1).jpeg",
+    tag: "Prepaid Subscription",
+    description: "Rich, creamy, high-fat buffalo milk ideal for paneer, curd, tea, and traditional sweets. Includes 30 Litres prepaid delivery card.",
+    benefits: [
+      "30 Litres pure thick buffalo milk",
+      "Morning delivery (1L daily)",
+      "High natural fat content (7%+)",
+      "No added preservatives or chemicals"
+    ],
+    sizes: ["30 Days Plan (30L)"]
+  },
+  {
+    id: "udf-ghee-storage-5l",
+    name: "Vedic Ghee Grand Storage Pack (5 Litres)",
+    price: 6999,
+    rating: 4.9,
+    reviews: 74,
+    image: "/images/WhatsApp Image 2026-07-09 at 2.19.20 PM (2).jpeg",
+    tag: "Grand Bulk Saving",
+    description: "Bulk package containing 5 bottles of 1 Litre A2 Desi Cow Bilona Ghee. Designed for large families and celebratory cooking.",
+    benefits: [
+      "Pack of 5 Glass Jars (1L each)",
+      "Save ₹500 compared to individual purchases",
+      "Vedic curd-churned traditional quality",
+      "Free express doorstep shipping"
+    ],
+    sizes: ["5 Litres Pack"]
   },
   {
     id: "udf-buffalo-ghee",
@@ -48,14 +116,31 @@ export const PRODUCTS: Product[] = [
     reviews: 142,
     image: "/images/WhatsApp Image 2026-07-09 at 2.19.20 PM.jpeg",
     tag: "Rich & Danedar",
-    description: "Pure, thick white buffalo ghee prepared using ancient simmering techniques. Famously granular (danedar), with a rich, inviting aroma. Perfect for traditional Indian cooking and sweets.",
+    description: "Granular white buffalo ghee, pure, aromatic, and rich. Prepared using traditional slow heat skimming of curd-churned butter.",
     benefits: [
-      "High smoke point - ideal for frying & tempering",
-      "Provides rapid energy and stamina",
-      "Rich, creamy flavor profile",
-      "100% natural, no additives"
+      "Granular (danedar) texture and white color",
+      "High smoke point, perfect for frying",
+      "Boosts energy and physical stamina",
+      "100% natural, preservative-free"
     ],
     sizes: ["1 Litre", "500ml"]
+  },
+  {
+    id: "udf-family-hamper",
+    name: "Grand UDF Family Dairy Hamper",
+    price: 3200,
+    rating: 4.9,
+    reviews: 84,
+    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM (3).jpeg",
+    tag: "Gift / Combo Pack",
+    description: "Perfect compilation of health. Renders 1L A2 Cow Ghee, 1kg Organic White Butter, 500g Fresh Vedic Paneer, and 500g Raw Wild Honey.",
+    benefits: [
+      "Includes premium ghee, butter, paneer, honey",
+      "Packed in a secure, hand-crafted gift carton",
+      "Save ₹350 on checkout",
+      "Same-day cold-chain delivery in Mumbai"
+    ],
+    sizes: ["1 Hamper Box"]
   },
   {
     id: "udf-white-butter",
@@ -65,31 +150,31 @@ export const PRODUCTS: Product[] = [
     reviews: 98,
     image: "/images/WhatsApp Image 2026-07-09 at 2.19.21 PM (1).jpeg",
     tag: "Freshly Churned",
-    description: "Unsalted, fresh white butter hand-churned from organic cow milk cream. Brings back the pure taste of home-churned butter, soft, creamy, and free of toxic artificial colorings or salt.",
+    description: "Unsalted, fresh white butter hand-churned directly from milk cream. Super creamy, soft, and completely chemical-free.",
     benefits: [
-      "Unsalted and 100% coloring-free",
-      "Extremely soft and melt-in-mouth texture",
-      "Excellent source of healthy fats",
-      "Freshly prepared on order"
+      "No added salt, coloring or chemicals",
+      "Churned fresh on order placement",
+      "Melt-in-mouth traditional texture",
+      "Contains fat-soluble essential vitamins"
     ],
     sizes: ["500g", "250g"]
   },
   {
-    id: "udf-cow-milk",
-    name: "Ultra Fresh Premium Cow Milk",
-    price: 75,
-    rating: 4.8,
-    reviews: 320,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM (1).jpeg",
-    tag: "Daily Essential",
-    description: "Daily fresh whole cow milk pasteurized under strict hygienic conditions. Ideal for children, breakfast cereals, milkshakes, and standard family cooking.",
+    id: "udf-a1-milk-sub",
+    name: "Ultra Fresh A1 Pure Milk (30 Days Subscription)",
+    price: 2040,
+    rating: 4.6,
+    reviews: 112,
+    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM (2).jpeg",
+    tag: "A1 Milk Subscription",
+    description: "Regular high-quality A1 cow milk pasteurized and chilled. Sourced from local farms. Includes a 30 Litre prepaid delivery card.",
     benefits: [
-      "Rich in natural fat and solids-not-fat (SNF)",
-      "Adulteration and chemical-free",
-      "A wholesome balance of protein and minerals",
-      "Flexible daily subscription options"
+      "30 Litres pure A1 milk total",
+      "Daily doorstep delivery (1L morning)",
+      "Hygienically packed and sealed",
+      "Wholesome nutrition for everyday use"
     ],
-    sizes: ["1 Litre"]
+    sizes: ["30 Days Plan (30L)"]
   }
 ];
 
@@ -106,11 +191,11 @@ export default function ProductGrid() {
             Our Organic Range
           </span>
           <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-primary mt-2">
-            Farm-Fresh Dairy & Pure Ghee
+            Farm-Fresh Dairy & Prepaid Subscriptions
           </h2>
           <div className="w-16 h-1 bg-gold mx-auto mt-4 rounded-full" />
           <p className="text-primary/70 text-sm mt-4">
-            Directly from pasture-fed cows in clean eco-systems to your kitchen in Mumbai. No chemical treatments, just absolute purity.
+            Browse our premium selection of traditional ghee, white butter, and prepaid monthly milk cards. Safe payment validation and free doorstep delivery in Mumbai.
           </p>
         </div>
 
@@ -190,7 +275,7 @@ export default function ProductGrid() {
 
                 <div className="mt-6 pt-4 border-t border-primary/5 flex items-center justify-between">
                   <div className="flex flex-col">
-                    <span className="text-[10px] text-primary/50 font-medium">Price starting at</span>
+                    <span className="text-[10px] text-primary/50 font-medium">Price</span>
                     <span className="text-xl font-heading font-bold text-primary">
                       ₹{product.price}
                     </span>
@@ -212,3 +297,4 @@ export default function ProductGrid() {
     </section>
   );
 }
+

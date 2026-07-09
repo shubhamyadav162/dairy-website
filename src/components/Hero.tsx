@@ -91,10 +91,10 @@ export default function Hero() {
           {/* Hero Featured Card / Image */}
           <div className="lg:col-span-5 relative flex justify-center">
             <div className="relative w-72 h-96 sm:w-80 sm:h-[450px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/60 transform rotate-2 hover:rotate-0 transition-transform duration-500 bg-cream">
-              {/* Fallback generated background image or user image */}
+              {/* Main user-uploaded hero illustration */}
               <img
-                src="/images/WhatsApp Image 2026-07-09 at 2.19.22 PM.jpeg"
-                alt="Ultra Premium Ghee"
+                src="/images/hero-farm.png"
+                alt="Ultra Premium Dairy Heritage"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   e.currentTarget.src = "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?q=80&w=600&auto=format&fit=crop";
@@ -103,13 +103,13 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 text-white text-left">
                 <span className="bg-gold text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">
-                  Bestseller
+                  Vedic Tradition
                 </span>
                 <h3 className="text-xl font-heading font-bold mt-2 text-white">
-                  A2 Desi Cow Bilona Ghee
+                  Ultra Pure & Natural
                 </h3>
                 <p className="text-xs text-white/80 mt-1">
-                  Traditional clay-pot curd churning for rich granulated texture and authentic aroma.
+                  Churned using traditional wood methods and sourced from clean, local pastures.
                 </p>
               </div>
             </div>
