@@ -13,7 +13,7 @@ export const PRODUCTS: Product[] = [
     price: 100,
     rating: 4.9,
     reviews: 312,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM (2).jpeg",
+    image: "/images/desi-delight-a2-milk.jpg",
     tag: "Best Seller",
     description: "Raw, unadulterated, and pasteurized farm-fresh whole A2 cow milk delivered in sterilized, eco-friendly glass bottles within 12 hours of milking.",
     benefits: [
@@ -64,7 +64,7 @@ export const PRODUCTS: Product[] = [
     price: 2700,
     rating: 4.8,
     reviews: 185,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.21 PM.jpeg",
+    image: "/images/udf-a2-milk.jpg",
     tag: "Prepaid Subscription",
     description: "Enjoy daily morning delivery of fresh A2 Cow Milk directly to your doorstep in Mumbai. Includes a 30 Litre prepaid delivery card.",
     benefits: [
@@ -81,7 +81,7 @@ export const PRODUCTS: Product[] = [
     price: 2250,
     rating: 4.8,
     reviews: 320,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM (1).jpeg",
+    image: "/images/premium-cow-milk-carton.png",
     tag: "Prepaid Subscription",
     description: "Daily fresh whole cow milk pasteurized hygienically and delivered before 8:00 AM. Includes 30 Litres prepaid delivery card.",
     benefits: [
@@ -98,7 +98,7 @@ export const PRODUCTS: Product[] = [
     price: 3300,
     rating: 4.7,
     reviews: 110,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.16 PM (1).jpeg",
+    image: "/images/buffalo-milk-carton.png",
     tag: "Prepaid Subscription",
     description: "Rich, creamy, high-fat buffalo milk ideal for paneer, curd, tea, and traditional sweets. Includes 30 Litres prepaid delivery card.",
     benefits: [
@@ -119,9 +119,9 @@ export const PRODUCTS: Product[] = [
     tag: "Grand Bulk Saving",
     description: "Bulk package containing 5 bottles of 1 Litre A2 Desi Cow Bilona Ghee. Designed for large families and celebratory cooking.",
     benefits: [
-      "Pack of 5 Glass Jars (1L each)",
-      "Save ₹500 compared to individual purchases",
-      "Vedic curd-churned traditional quality",
+      "Keep family healthy for months",
+      "Flat ₹500 discount included",
+      "Curd-churned traditional quality",
       "Free express doorstep shipping"
     ],
     sizes: ["5 Litres Pack"]
@@ -183,7 +183,7 @@ export const PRODUCTS: Product[] = [
     price: 2040,
     rating: 4.6,
     reviews: 112,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM (2).jpeg",
+    image: "/images/a1-cow-milk-carton.png",
     tag: "A1 Milk Subscription",
     description: "Regular high-quality A1 cow milk pasteurized and chilled. Sourced from local farms. Includes a 30 Litre prepaid delivery card.",
     benefits: [
