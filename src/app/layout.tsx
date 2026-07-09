@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "../context/CartContext";
+import Header from "../components/Header";
+import CartDrawer from "../components/CartDrawer";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -27,8 +30,15 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        <CartProvider>
+          <Header />
+          <div className="flex-1">{children}</div>
+          <CartDrawer />
+        </CartProvider>
+      </body>
     </html>
   );
 }
+
 

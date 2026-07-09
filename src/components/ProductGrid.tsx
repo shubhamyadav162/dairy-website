@@ -1,11 +1,29 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Star, ShoppingCart, Eye } from "lucide-react";
 import { useCart, Product } from "../context/CartContext";
 
-// 10 Detailed products catalog including subscriptions, bundles and combinations
+// 11 Detailed products catalog including subscriptions, bundles and combinations
 export const PRODUCTS: Product[] = [
+  {
+    id: "udf-a2-milk-glass",
+    name: "Ultra Pure A2 Cow Milk (Glass Bottle)",
+    price: 100,
+    rating: 4.9,
+    reviews: 312,
+    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM (2).jpeg",
+    tag: "Best Seller",
+    description: "Raw, unadulterated, and pasteurized farm-fresh whole A2 cow milk delivered in sterilized, eco-friendly glass bottles within 12 hours of milking.",
+    benefits: [
+      "Pure A2 beta-casein protein",
+      "Delivered in premium glass bottles",
+      "Sourced from grass-fed Gir & Rathi cows",
+      "Rigorous 40+ parameter lab testing"
+    ],
+    sizes: ["1 Litre"]
+  },
   {
     id: "udf-a2-ghee",
     name: "Ultra Premium A2 Desi Cow Ghee (Bilona)",
@@ -179,7 +197,7 @@ export const PRODUCTS: Product[] = [
 ];
 
 export default function ProductGrid() {
-  const { addToCart, setSelectedProduct } = useCart();
+  const { addToCart } = useCart();
 
   return (
     <section id="products" className="py-24 bg-cream/30">
@@ -224,13 +242,13 @@ export default function ProductGrid() {
 
                 {/* Quick actions overlay */}
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-3 z-10">
-                  <button
-                    onClick={() => setSelectedProduct(product)}
+                  <Link
+                    href={`/product/${product.id}`}
                     className="p-3 bg-cream text-primary rounded-full hover:bg-gold hover:text-white transition-colors duration-200 shadow-md"
-                    title="Quick View"
+                    title="View Details"
                   >
                     <Eye className="w-5 h-5" />
-                  </button>
+                  </Link>
                   <button
                     onClick={() => addToCart(product, 1, product.sizes[0])}
                     className="p-3 bg-cream text-primary rounded-full hover:bg-gold hover:text-white transition-colors duration-200 shadow-md"
@@ -261,12 +279,11 @@ export default function ProductGrid() {
                     </span>
                   </div>
 
-                  <h3
-                    onClick={() => setSelectedProduct(product)}
-                    className="text-lg font-heading font-extrabold text-primary hover:text-gold cursor-pointer transition-colors duration-200 line-clamp-1"
-                  >
-                    {product.name}
-                  </h3>
+                  <Link href={`/product/${product.id}`}>
+                    <h3 className="text-lg font-heading font-extrabold text-primary hover:text-gold cursor-pointer transition-colors duration-200 line-clamp-1">
+                      {product.name}
+                    </h3>
+                  </Link>
                   
                   <p className="text-xs text-primary/70 mt-2 line-clamp-2 leading-relaxed">
                     {product.description}
@@ -280,12 +297,12 @@ export default function ProductGrid() {
                       ₹{product.price}
                     </span>
                   </div>
-                  <button
-                    onClick={() => setSelectedProduct(product)}
-                    className="premium-btn-gold text-xs px-4 py-2 font-bold"
+                  <Link
+                    href={`/product/${product.id}`}
+                    className="premium-btn-gold text-xs px-4 py-2 font-bold flex items-center justify-center"
                   >
                     Configure & Buy
-                  </button>
+                  </Link>
                 </div>
               </div>
 
