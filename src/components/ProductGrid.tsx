@@ -22,7 +22,8 @@ export const PRODUCTS: Product[] = [
       "Sourced from grass-fed Gir & Rathi cows",
       "Rigorous 40+ parameter lab testing"
     ],
-    sizes: ["1 Litre"]
+    sizes: ["1 Litre"],
+    gallery: ["/images/desi-delight-a2-milk.jpg", "/images/hero-farm.png"]
   },
   {
     id: "udf-a2-ghee",
@@ -30,7 +31,7 @@ export const PRODUCTS: Product[] = [
     price: 1499,
     rating: 4.9,
     reviews: 248,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM.jpeg",
+    image: "/images/a2-cow-ghee.png",
     tag: "Vedic Bilona Churned",
     description: "Prepared using traditional clay pot bilona churning of A2 cow milk curds. Simmered on slow woodfire for rich granularity and authentic aroma.",
     benefits: [
@@ -39,7 +40,8 @@ export const PRODUCTS: Product[] = [
       "Improves digestion & gut health",
       "Rich source of Vitamins A, D, E, K"
     ],
-    sizes: ["1 Litre", "500ml"]
+    sizes: ["1 Litre", "500ml"],
+    gallery: ["/images/a2-cow-ghee.png", "/images/a2-cow-ghee-spoon.png"]
   },
   {
     id: "udf-ghee-combo-3l",
@@ -47,7 +49,7 @@ export const PRODUCTS: Product[] = [
     price: 4299,
     rating: 4.9,
     reviews: 96,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.20 PM (3).jpeg",
+    image: "/images/a2-cow-ghee-combo-3l.png",
     tag: "Bulk Combo Saving",
     description: "Get a value pack of 3 bottles of 1 Litre A2 Desi Cow Bilona Ghee. Save money on bulk shipping and secure your family's health for months.",
     benefits: [
@@ -56,7 +58,8 @@ export const PRODUCTS: Product[] = [
       "Perfect shelf life up to 12 months",
       "Free premium delivery all over India"
     ],
-    sizes: ["3 Litres Pack"]
+    sizes: ["3 Litres Pack"],
+    gallery: ["/images/a2-cow-ghee-combo-3l.png", "/images/a2-cow-ghee.png"]
   },
   {
     id: "udf-a2-milk-sub",
@@ -73,7 +76,8 @@ export const PRODUCTS: Product[] = [
       "Pause / resume delivery anytime via phone",
       "Rich in premium digestible A2 protein"
     ],
-    sizes: ["30 Days Plan (30L)"]
+    sizes: ["30 Days Plan (30L)"],
+    gallery: ["/images/udf-a2-milk.jpg", "/images/hero-farm.png"]
   },
   {
     id: "udf-premium-milk-sub",
@@ -90,7 +94,8 @@ export const PRODUCTS: Product[] = [
       "No delivery charges included",
       "Rich in natural fat and vitamins"
     ],
-    sizes: ["30 Days Plan (30L)"]
+    sizes: ["30 Days Plan (30L)"],
+    gallery: ["/images/premium-cow-milk-carton.png", "/images/hero-farm.png"]
   },
   {
     id: "udf-buffalo-milk-sub",
@@ -107,7 +112,8 @@ export const PRODUCTS: Product[] = [
       "High natural fat content (7%+)",
       "No added preservatives or chemicals"
     ],
-    sizes: ["30 Days Plan (30L)"]
+    sizes: ["30 Days Plan (30L)"],
+    gallery: ["/images/buffalo-milk-carton.png", "/images/footer-farm.jpg"]
   },
   {
     id: "udf-ghee-storage-5l",
@@ -115,7 +121,7 @@ export const PRODUCTS: Product[] = [
     price: 6999,
     rating: 4.9,
     reviews: 74,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.20 PM (2).jpeg",
+    image: "/images/a2-cow-ghee-combo-5l.png",
     tag: "Grand Bulk Saving",
     description: "Bulk package containing 5 bottles of 1 Litre A2 Desi Cow Bilona Ghee. Designed for large families and celebratory cooking.",
     benefits: [
@@ -124,7 +130,8 @@ export const PRODUCTS: Product[] = [
       "Curd-churned traditional quality",
       "Free express doorstep shipping"
     ],
-    sizes: ["5 Litres Pack"]
+    sizes: ["5 Litres Pack"],
+    gallery: ["/images/a2-cow-ghee-combo-5l.png", "/images/a2-cow-ghee.png"]
   },
   {
     id: "udf-buffalo-ghee",
@@ -132,7 +139,7 @@ export const PRODUCTS: Product[] = [
     price: 850,
     rating: 4.7,
     reviews: 142,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.20 PM.jpeg",
+    image: "/images/buffalo-ghee-jar.png",
     tag: "Rich & Danedar",
     description: "Granular white buffalo ghee, pure, aromatic, and rich. Prepared using traditional slow heat skimming of curd-churned butter.",
     benefits: [
@@ -141,7 +148,8 @@ export const PRODUCTS: Product[] = [
       "Boosts energy and physical stamina",
       "100% natural, preservative-free"
     ],
-    sizes: ["1 Litre", "500ml"]
+    sizes: ["1 Litre", "500ml"],
+    gallery: ["/images/buffalo-ghee-jar.png"]
   },
   {
     id: "udf-family-hamper",
@@ -149,7 +157,7 @@ export const PRODUCTS: Product[] = [
     price: 3200,
     rating: 4.9,
     reviews: 84,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.22 PM (3).jpeg",
+    image: "/images/family-dairy-hamper.png",
     tag: "Gift / Combo Pack",
     description: "Perfect compilation of health. Renders 1L A2 Cow Ghee, 1kg Organic White Butter, 500g Fresh Vedic Paneer, and 500g Raw Wild Honey.",
     benefits: [
@@ -158,7 +166,8 @@ export const PRODUCTS: Product[] = [
       "Save ₹350 on checkout",
       "Same-day cold-chain delivery in Mumbai"
     ],
-    sizes: ["1 Hamper Box"]
+    sizes: ["1 Hamper Box"],
+    gallery: ["/images/family-dairy-hamper.png", "/images/a2-cow-ghee.png", "/images/organic-white-butter.png"]
   },
   {
     id: "udf-white-butter",
@@ -166,7 +175,7 @@ export const PRODUCTS: Product[] = [
     price: 299,
     rating: 4.9,
     reviews: 98,
-    image: "/images/WhatsApp Image 2026-07-09 at 2.19.21 PM (1).jpeg",
+    image: "/images/organic-white-butter.png",
     tag: "Freshly Churned",
     description: "Unsalted, fresh white butter hand-churned directly from milk cream. Super creamy, soft, and completely chemical-free.",
     benefits: [
@@ -175,7 +184,8 @@ export const PRODUCTS: Product[] = [
       "Melt-in-mouth traditional texture",
       "Contains fat-soluble essential vitamins"
     ],
-    sizes: ["500g", "250g"]
+    sizes: ["500g", "250g"],
+    gallery: ["/images/organic-white-butter.png"]
   },
   {
     id: "udf-a1-milk-sub",
@@ -192,7 +202,8 @@ export const PRODUCTS: Product[] = [
       "Hygienically packed and sealed",
       "Wholesome nutrition for everyday use"
     ],
-    sizes: ["30 Days Plan (30L)"]
+    sizes: ["30 Days Plan (30L)"],
+    gallery: ["/images/a1-cow-milk-carton.png", "/images/hero-farm.png"]
   }
 ];
 

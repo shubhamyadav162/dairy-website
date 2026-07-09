@@ -22,6 +22,7 @@ export interface Product {
   description: string;
   benefits: string[];
   sizes: string[];
+  gallery?: string[];
 }
 
 interface CartContextType {

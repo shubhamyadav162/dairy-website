@@ -45,12 +45,7 @@ export default function ProductDetailPage() {
   }
 
   // Gallery images array
-  const galleryImages = [
-    product.image,
-    "/images/hero-farm.png",
-    "/images/footer-farm.jpg",
-    "/images/WhatsApp Image 2026-07-09 at 2.19.20 PM (3).jpeg"
-  ];
+  const galleryImages = product.gallery || [product.image];
 
   // Dynamic price mapping based on selection
   const getDynamicPrice = () => {
