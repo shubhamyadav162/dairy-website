@@ -98,9 +98,9 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#process" className="hover:text-gold transition-colors flex items-center gap-1">
-                    <ChevronRight className="w-3 h-3 text-gold/40" /> Vedic Method
-                  </a>
+                  <Link href="/about" className="hover:text-gold transition-colors flex items-center gap-1">
+                    <ChevronRight className="w-3 h-3 text-gold/40" /> Our Story
+                  </Link>
                 </li>
                 <li>
                   <a href="#testimonials" className="hover:text-gold transition-colors flex items-center gap-1">

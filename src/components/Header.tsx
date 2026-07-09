@@ -65,10 +65,10 @@ export default function Header() {
               Shop
             </Link>
             <Link
-              href="/#process"
+              href="/about"
               className="text-primary/80 hover:text-gold font-medium text-sm transition-colors duration-200"
             >
-              Our Process
+              Our Story
             </Link>
             <Link
               href="/#testimonials"
@@ -130,11 +130,11 @@ export default function Header() {
             Shop
           </Link>
           <Link
-            href="/#process"
+            href="/about"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-primary/5 hover:text-gold"
           >
-            Our Process
+            Our Story
           </Link>
           <Link
             href="/#testimonials"
