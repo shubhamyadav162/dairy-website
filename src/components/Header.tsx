@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import { ShoppingBag, Menu, X, User } from "lucide-react";
 import { useCart } from "../context/CartContext";
 
@@ -25,73 +26,62 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-cream/80 backdrop-blur-md border-b border-primary/5 py-3 shadow-sm"
+          ? "bg-[#FAF6EE]/90 backdrop-blur-md border-b border-primary/5 py-3 shadow-sm"
           : "bg-transparent py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
+          
           {/* Logo */}
-          <a href="#" className="flex items-center space-x-2 group">
-            {/* SVG monogram based on UDF letterhead */}
-            <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center border border-gold/30 p-1.5 transition-transform group-hover:scale-105">
-              <svg
-                viewBox="0 0 100 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-full text-secondary"
-              >
-                {/* Stylized monogram U-D-F from the PDF */}
-                <path
-                  d="M20,20 C30,35 30,65 30,80 C30,85 70,85 70,80 C70,65 70,35 80,20 C60,10 40,10 20,20 Z"
-                  stroke="currentColor"
-                  strokeWidth="8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M38,40 C45,45 55,45 62,40 C62,55 62,65 50,72 C38,65 38,55 38,40 Z"
-                  fill="currentColor"
-                  opacity="0.8"
-                />
-              </svg>
+          <Link href="/" className="flex items-center space-x-2 group">
+            {/* Official UDF Logo Monogram Container */}
+            <div className="w-12 h-12 bg-white/70 backdrop-blur-sm rounded-full flex items-center justify-center border border-gold/30 p-1.5 transition-transform group-hover:scale-105 overflow-hidden">
+              <img
+                src="/images/udf-logo.png"
+                alt="United Dairy Farms Monogram Logo"
+                className="w-full h-full object-contain"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+              />
             </div>
-            <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-heading font-bold text-primary tracking-tight leading-none">
+            <div className="flex flex-col text-left">
+              <span className="text-lg sm:text-xl font-heading font-extrabold text-primary tracking-tight leading-none">
                 Ultra Dairy Farms
               </span>
-              <span className="text-[10px] text-gold font-medium uppercase tracking-widest leading-none mt-1">
+              <span className="text-[10px] text-gold font-bold uppercase tracking-widest leading-none mt-1.5">
                 United Dairy Farms
               </span>
             </div>
-          </a>
+          </Link>
 
-          {/* Desktop Nav */}
+          {/* Desktop Nav (redirects back to home sections dynamically) */}
           <nav className="hidden md:flex space-x-8">
-            <a
-              href="#products"
+            <Link
+              href="/#products"
               className="text-primary/80 hover:text-gold font-medium text-sm transition-colors duration-200"
             >
               Shop
-            </a>
-            <a
-              href="#process"
+            </Link>
+            <Link
+              href="/#process"
               className="text-primary/80 hover:text-gold font-medium text-sm transition-colors duration-200"
             >
               Our Process
-            </a>
-            <a
-              href="#testimonials"
+            </Link>
+            <Link
+              href="/#testimonials"
               className="text-primary/80 hover:text-gold font-medium text-sm transition-colors duration-200"
             >
               Reviews
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/#contact"
               className="text-primary/80 hover:text-gold font-medium text-sm transition-colors duration-200"
             >
               Contact Us
-            </a>
+            </Link>
           </nav>
 
           {/* Actions */}
@@ -131,35 +121,35 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-cream border-b border-primary/5 px-4 pt-2 pb-6 space-y-3 shadow-lg animate-fade-in">
-          <a
-            href="#products"
+        <div className="md:hidden bg-[#FAF6EE] border-b border-primary/5 px-4 pt-2 pb-6 space-y-3 shadow-lg animate-fade-in text-left">
+          <Link
+            href="/#products"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-primary/5 hover:text-gold"
           >
             Shop
-          </a>
-          <a
-            href="#process"
+          </Link>
+          <Link
+            href="/#process"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-primary/5 hover:text-gold"
           >
             Our Process
-          </a>
-          <a
-            href="#testimonials"
+          </Link>
+          <Link
+            href="/#testimonials"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-primary/5 hover:text-gold"
           >
             Reviews
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/#contact"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block px-3 py-2 rounded-md text-base font-medium text-primary hover:bg-primary/5 hover:text-gold"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       )}
     </header>
