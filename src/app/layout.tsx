@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Ultra Dairy Farms | Premium A2 Desi Cow Bilona Ghee & Farm Fresh Milk",
+  title: "United Dairy Farms | Premium A2 Desi Cow Bilona Ghee & Farm Fresh Milk",
   description: "Experience the pure goodness of traditional A2 Desi Cow Bilona Ghee, organic milk, and authentic farm-fresh dairy products by United Dairy Farms (UDF). Delivered across Mumbai.",
 };
 

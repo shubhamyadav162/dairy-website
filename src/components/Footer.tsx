@@ -60,10 +60,10 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col text-left">
                   <span className="text-xl font-heading font-extrabold text-cream leading-none tracking-tight">
-                    Ultra Dairy Farms
+                    United Dairy Farms
                   </span>
                   <span className="text-[10px] text-gold font-bold uppercase tracking-widest leading-none mt-1.5">
-                    United Dairy Farms
+                    Pure Vedic Tradition
                   </span>
                 </div>
               </a>
@@ -207,7 +207,7 @@ export default function Footer() {
           </div>
 
           <div className="text-[10px] text-cream/40 text-center md:text-right">
-            © {new Date().getFullYear()} United Dairy Farms. All rights reserved. Brand Designed as Ultra Dairy Farms.
+            © {new Date().getFullYear()} United Dairy Farms. All rights reserved.
           </div>
         </div>
       </div>

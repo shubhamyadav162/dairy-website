@@ -27,7 +27,7 @@ export default function TermsOfService() {
 
         <div className="space-y-6 text-sm text-primary/80 leading-relaxed font-light">
           <p>
-            Welcome to **Ultra Dairy Farms** (by United Dairy Farms). These Terms of Service govern your use of our website located at `www.uniteddairyfarms.com` and your purchase of our milk, ghee, and other dairy products.
+            Welcome to **United Dairy Farms**. These Terms of Service govern your use of our website located at `www.uniteddairyfarms.com` and your purchase of our milk, ghee, and other dairy products.
           </p>
 
           <h2 className="text-lg font-heading font-bold text-primary pt-4 border-t border-primary/5">

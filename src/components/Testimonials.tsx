@@ -11,7 +11,7 @@ export default function Testimonials() {
       location: "Chembur, Mumbai",
       rating: 5,
       title: "Best Ghee in Mumbai!",
-      content: "I have been looking for authentic bilona ghee for a long time. Ultra Dairy Farms' A2 Ghee is absolute perfection. The grains are prominent, the aroma takes me back to my grandmother's kitchen, and my digestion has improved significantly."
+      content: "I have been looking for authentic bilona ghee for a long time. United Dairy Farms' A2 Ghee is absolute perfection. The grains are prominent, the aroma takes me back to my grandmother's kitchen, and my digestion has improved significantly."
     },
     {
       name: "Vikram Malhotra",
@@ -45,7 +45,7 @@ export default function Testimonials() {
           </h2>
           <div className="w-16 h-1 bg-gold mx-auto mt-4 rounded-full" />
           <p className="text-primary/70 text-sm mt-4">
-            Hear from our verified customers across Mumbai who have switched to the pure taste of Ultra Dairy Farms.
+            Hear from our verified customers across Mumbai who have switched to the pure taste of United Dairy Farms.
           </p>
         </div>
 

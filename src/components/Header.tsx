@@ -48,10 +48,10 @@ export default function Header() {
             </div>
             <div className="flex flex-col text-left">
               <span className="text-lg sm:text-xl font-heading font-extrabold text-primary tracking-tight leading-none">
-                Ultra Dairy Farms
+                United Dairy Farms
               </span>
               <span className="text-[10px] text-gold font-bold uppercase tracking-widest leading-none mt-1.5">
-                United Dairy Farms
+                Pure Vedic Tradition
               </span>
             </div>
           </Link>

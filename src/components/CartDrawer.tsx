@@ -93,7 +93,7 @@ export default function CartDrawer() {
                     <div className="space-y-2">
                       <h3 className="text-2xl font-heading font-extrabold text-primary">Order Confirmed!</h3>
                       <p className="text-xs text-primary/70 max-w-sm leading-relaxed">
-                        Thank you for shopping with Ultra Dairy Farms. Your fresh products are being processed.
+                        Thank you for shopping with United Dairy Farms. Your fresh products are being processed.
                       </p>
                     </div>
 

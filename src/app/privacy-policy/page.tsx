@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
 
         <div className="space-y-6 text-sm text-primary/80 leading-relaxed font-light">
           <p>
-            At **Ultra Dairy Farms** (by United Dairy Farms), accessible from our website, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Ultra Dairy Farms and how we use it.
+            At **United Dairy Farms**, accessible from our website, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by United Dairy Farms and how we use it.
           </p>
 
           <h2 className="text-lg font-heading font-bold text-primary pt-4 border-t border-primary/5">
@@ -60,7 +60,7 @@ export default function PrivacyPolicy() {
             3. Log Files
           </h2>
           <p>
-            Ultra Dairy Farms follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this as part of hosting services' analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable.
+            United Dairy Farms follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this as part of hosting services' analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable.
           </p>
 
           <h2 className="text-lg font-heading font-bold text-primary pt-4 border-t border-primary/5">

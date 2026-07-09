@@ -27,7 +27,7 @@ export default function ShippingPolicy() {
 
         <div className="space-y-6 text-sm text-primary/80 leading-relaxed font-light">
           <p>
-            Welcome to **Ultra Dairy Farms**. Below are the shipping and delivery terms and conditions that govern our supply operations in Mumbai.
+            Welcome to **United Dairy Farms**. Below are the shipping and delivery terms and conditions that govern our supply operations in Mumbai.
           </p>
 
           <h2 className="text-lg font-heading font-bold text-primary pt-4 border-t border-primary/5">

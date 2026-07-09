@@ -27,7 +27,7 @@ export default function RefundPolicy() {
 
         <div className="space-y-6 text-sm text-primary/80 leading-relaxed font-light">
           <p>
-            At **Ultra Dairy Farms**, we are committed to providing you with the freshest and highest quality milk, ghee, and dairy products. Since we deal in perishable food goods, our refund and cancellation policies are framed to ensure hygiene and customer satisfaction.
+            At **United Dairy Farms**, we are committed to providing you with the freshest and highest quality milk, ghee, and dairy products. Since we deal in perishable food goods, our refund and cancellation policies are framed to ensure hygiene and customer satisfaction.
           </p>
 
           <h2 className="text-lg font-heading font-bold text-primary pt-4 border-t border-primary/5">

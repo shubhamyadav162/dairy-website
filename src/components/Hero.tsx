@@ -27,7 +27,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg text-primary/90 font-light leading-relaxed">
-            Welcome to **Ultra Dairy Farms** (by United Dairy Farms). We deliver premium, farm-fresh whole milk, A2 cow milk, and traditional Vedic Bilona Ghee churned with ancient recipes to your doorstep in Mumbai.
+            Welcome to **United Dairy Farms** (UDF). We deliver premium, farm-fresh whole milk, A2 cow milk, and traditional Vedic Bilona Ghee churned with ancient recipes to your doorstep in Mumbai.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
