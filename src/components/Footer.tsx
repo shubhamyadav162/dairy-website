@@ -25,10 +25,16 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contact" className="bg-primary text-cream pt-0 pb-8 border-t border-gold/10 overflow-hidden">
-      
-      {/* Top Green Promo Marquee Bar */}
-      <div className="bg-[#2F5233] text-cream py-2.5 text-xs uppercase tracking-widest font-semibold overflow-hidden border-b border-gold/10">
+    <footer
+      id="contact"
+      className="relative text-cream pt-0 pb-8 overflow-hidden bg-cover bg-center border-t border-gold/10"
+      style={{ backgroundImage: "url('/images/footer-farm.jpg')" }}
+    >
+      {/* Dark Rich Overlay for Maximum Text Contrast & Readability */}
+      <div className="absolute inset-0 bg-[#2D1E18]/92 backdrop-blur-[1px] z-0" />
+
+      {/* Top Green Promo Marquee Bar (keeps z-10 for layering) */}
+      <div className="relative z-10 bg-[#2F5233] text-cream py-2.5 text-xs uppercase tracking-widest font-semibold overflow-hidden border-b border-gold/10">
         <div className="flex animate-marquee whitespace-nowrap justify-around">
           <span>★ SHOP NOW AND SAVE UP TO 30% ★</span>
           <span className="hidden sm:inline">◆ FREE SHIPPING ABOVE ₹ 500/- ◆</span>
@@ -38,31 +44,38 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-cream/10">
           
-          {/* Left Column: Farm Illustration & Brand */}
+          {/* Left Column: Brand & Payment Methods */}
           <div className="lg:col-span-4 space-y-6 text-left">
-            <div className="relative w-full h-44 rounded-2xl overflow-hidden shadow-md border border-gold/25">
-              <img
-                src="/images/footer-farm.jpg"
-                alt="Ultra Dairy Production Plant"
-                className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500"
-                onError={(e) => {
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=400&auto=format&fit=crop";
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-              <div className="absolute bottom-3 left-4 text-cream">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-gold leading-none">Our Facility</p>
-                <p className="text-xs font-heading font-extrabold mt-1">United Dairy Farms Plant</p>
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <span className="text-lg font-heading font-bold text-cream block">
-                Ultra Dairy Farms
-              </span>
+            <div className="space-y-4">
+              <a href="#" className="flex items-center space-x-2">
+                <div className="w-10 h-10 bg-cream/15 rounded-full flex items-center justify-center border border-gold/20 p-1.5 text-secondary">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                    <path
+                      d="M20,20 C30,35 30,65 30,80 C30,85 70,85 70,80 C70,65 70,35 80,20 C60,10 40,10 20,20 Z"
+                      stroke="currentColor"
+                      strokeWidth="8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M38,40 C45,45 55,45 62,40 C62,55 62,65 50,72 C38,65 38,55 38,40 Z"
+                      fill="currentColor"
+                      opacity="0.8"
+                    />
+                  </svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xl font-heading font-extrabold text-cream leading-none tracking-tight">
+                    Ultra Dairy Farms
+                  </span>
+                  <span className="text-[10px] text-gold font-medium uppercase tracking-widest leading-none mt-1">
+                    United Dairy Farms
+                  </span>
+                </div>
+              </a>
               <p className="text-xs text-cream/70 leading-relaxed font-light">
                 Supplying traditional bilona ghee and pure whole milk since 2017. Sourced ethically from grass-fed cows.
               </p>
