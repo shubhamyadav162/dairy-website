@@ -31,7 +31,7 @@ export default function Footer() {
       style={{ backgroundImage: "url('/images/footer-farm.jpg')" }}
     >
       {/* Dark Rich Overlay for Maximum Text Contrast & Readability */}
-      <div className="absolute inset-0 bg-[#2D1E18]/92 backdrop-blur-[1px] z-0" />
+      <div className="absolute inset-0 bg-[#2D1E18]/65 backdrop-blur-[1px] z-0" />
 
       {/* Top Green Promo Marquee Bar (keeps z-10 for layering) */}
       <div className="relative z-10 bg-[#2F5233] text-cream py-2.5 text-xs uppercase tracking-widest font-semibold overflow-hidden border-b border-gold/10">
